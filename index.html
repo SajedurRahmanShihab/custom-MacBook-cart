@@ -22,29 +22,29 @@
             <!-- Memory Section -->
             <h4 class="mt-10 font-bold">Memory</h4>
             <section class="grid grid-cols-3 gap-2 mt-2">
-                <div><button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">8GB unified memory</button>
+                <div><button id="eight-gb-ram" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">8GB unified memory</button>
                 </div>
                 <div>
-                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">16GB unified memory</button>
+                    <button id="sixteen-gb-ram" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">16GB unified memory</button>
                 </div>
             </section>
             <h4 class="mt-10 font-bold">Storage</h4>
             <section class="grid grid-cols-3 gap-2 mt-2">
-                <div><button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">256GB SSD storage</button>
+                <div><button id="ssd-256" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">256GB SSD storage</button>
                 </div>
                 <div>
-                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">512GB SSD storage</button>
+                    <button id="ssd-512" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">512GB SSD storage</button>
                 </div>
                 <div>
-                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">1TB SSD storage</button>
+                    <button id="ssd-1TB" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">1TB SSD storage</button>
                 </div>
             </section>
             <h4 class="mt-10 font-bold">Choose your delivery option</h4>
             <section class="grid grid-cols-3 gap-2 mt-2">
-                <div><button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Friday, Aug 25 FREE Prime Delivery</button>
+                <div><button id="delivery-method-1" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Friday, Aug 25 FREE Prime Delivery</button>
                 </div>
                 <div>
-                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Friday, Aug 21 Delivery charge $20</button>
+                    <button id="delivery-method-2" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Friday, Aug 21 Delivery charge $20</button>
                 </div>
             </section>
 
@@ -64,7 +64,7 @@
                         <div class="font-bold">Extra Memory Cost</div>
                     </div>
                     <div>
-                        <h3 class="font-bold">$0</h3>
+                        <h3 class="font-bold">$<span id="ram-cost">0</span></h3>
                     </div>
                 </div>
                 <hr>
@@ -73,7 +73,7 @@
                         <div class="font-bold">Extra Storage Cost</div>
                     </div>
                     <div>
-                        <h3 class="font-bold">$0</h3>
+                        <h3 class="font-bold">$<span id="ssd-cost">0</span></h3>
                     </div>
                 </div>
                 <hr>
@@ -82,7 +82,7 @@
                         <div class="font-bold">Delivery charge</div>
                     </div>
                     <div>
-                        <h3 class="font-bold">$0</h3>
+                        <h3 class="font-bold">$<span id="delivery-cost">0</span></h3>
                     </div>
                 </div>
                 <hr class="hr-bold">
@@ -91,7 +91,7 @@
                         <div class="font-bold">Total Price</div>
                     </div>
                     <div>
-                        <h3 class="font-bold">$1299</h3>
+                        <h3 class="font-bold">$<span id="total-price">0</span></h3>
                     </div>
                 </div>
                 <hr>
