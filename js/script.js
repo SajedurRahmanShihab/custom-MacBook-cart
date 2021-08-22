@@ -65,5 +65,6 @@ document.getElementById('promo-button').addEventListener('click', function() {
         const discountPrice = totalPriceNum - totalPriceNum * (20 / 100);
         discountPriceId.innerText = discountPrice;
     }
+    promoInput.value = '';
 
 })
