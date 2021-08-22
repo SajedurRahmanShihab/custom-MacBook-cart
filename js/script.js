@@ -1,3 +1,4 @@
+// calculate the total price
 function calculateTotal() {
     const totalPrice = document.getElementById('total-price');
     const ramCost = document.getElementById('ram-cost');
@@ -55,6 +56,7 @@ document.getElementById('delivery-method-2').addEventListener('click', function(
     calculateTotal();
 });
 
+// promo code 
 document.getElementById('promo-button').addEventListener('click', function() {
     const promoInput = document.getElementById('promo-input');
     const discountPriceId = document.getElementById('discount-price');
